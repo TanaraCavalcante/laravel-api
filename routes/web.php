@@ -32,4 +32,6 @@ Route::post('/project', [App\Http\Controllers\Admin\ProjectController::class, 's
 Route::get('/project/{id}/edit', [App\Http\Controllers\Admin\ProjectController::class, 'edit'])->name('edit');
 Route::put('/project/{id}', [App\Http\Controllers\Admin\ProjectController::class, 'update'])->name('update');
 Route::delete('/project/{id}', [App\Http\Controllers\Admin\ProjectController::class, 'destroy'])->name('delete');
+// opçao de rotas escritas juntas
+// Route::resource('project', ProjectController::class);
 });

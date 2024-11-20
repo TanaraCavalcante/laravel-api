@@ -17,6 +17,7 @@ class ProjectController extends Controller
         ]);
     }
     public function show(Project $project){
+        $project = new Project();
         return response()->json([
             'success'=> true,
             'results'=> $project
