@@ -30,7 +30,6 @@ class ProjectSeeder extends Seeder
                 $newProject->title = $riga[0];
                 $newProject->description = $riga[1];
                 $newProject->category = $riga[2];
-                $newProject->tech_stack = $riga[3];
                 $newProject->github_link = $riga[4];
                 $newProject->creation_date = $riga[5];
                 $newProject->save();
